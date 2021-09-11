@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<robot name="URDF_assembly" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find URDF_assembly_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find URDF_assembly_description)/urdf/URDF_assembly.trans" />
+<xacro:include filename="$(find URDF_assembly_description)/urdf/URDF_assembly.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.23054490976253805 -8.963206315502984e-09 0.41686009175563504"/>
+    <mass value="3.002480048799235"/>
+    <inertia ixx="0.01174" ixy="-0.0" ixz="-2.7e-05" iyy="0.011554" iyz="-0.0" izz="0.02133"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_link_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.002263140605728825 2.6438566772442577e-05 -0.0800861120636212"/>
+    <mass value="3.659594519084256"/>
+    <inertia ixx="0.04654" ixy="0.000385" ixz="0.031279" iyy="0.078209" iyz="-0.00038" izz="0.069305"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.231608 -0.0 -0.384151"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.231608 -0.0 -0.384151"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_link_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0006604543328198875 0.04903458537714363 -0.06641757235563236"/>
+    <mass value="4.571579119679246"/>
+    <inertia ixx="0.03739" ixy="-5.1e-05" ixz="7e-06" iyy="0.035561" iyz="-6e-06" izz="0.00903"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.059389 0.052245 -0.077901"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.059389 0.052245 -0.077901"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_link_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00010267567677357814 0.041744195219170596 -0.044474665169169786"/>
+    <mass value="2.0293161281543504"/>
+    <inertia ixx="0.008646" ixy="4e-06" ixz="-8.5e-05" iyy="0.008977" iyz="-1.8e-05" izz="0.002245"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.058971 0.045985 0.126546"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.058971 0.045985 0.126546"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_link_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.358799772812393e-06 0.00022382765797515983 -0.031684354305096585"/>
+    <mass value="0.4540044507376818"/>
+    <inertia ixx="0.000494" ixy="-1e-06" ixz="0.0" iyy="0.000433" iyz="2e-05" izz="0.000431"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.059966 0.004848 0.300955"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.059966 0.004848 0.300955"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="joint_link_5_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0032455273421979278 0.00991369943882629 -0.03522105014516702"/>
+    <mass value="0.14558350320287125"/>
+    <inertia ixx="0.000111" ixy="0.0" ixz="6e-06" iyy="0.000136" iyz="-0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.059717 0.025347 0.353955"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.059717 0.025347 0.353955"/>
+    <geometry>
+      <mesh filename="package://URDF_assembly_description/meshes/joint_link_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Joint_1" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.231608 0.0 0.384151"/>
+  <parent link="base_link"/>
+  <child link="joint_link_1_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Joint_2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.290997 -0.052245 -0.30625"/>
+  <parent link="joint_link_1_1"/>
+  <child link="joint_link_2_1"/>
+  <axis xyz="0.012169 0.999926 0.0"/>
+</joint>
+
+<joint name="Joint_3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.000418 0.00626 -0.204447"/>
+  <parent link="joint_link_2_1"/>
+  <child link="joint_link_3_1"/>
+  <axis xyz="-0.012169 -0.999926 0.0"/>
+</joint>
+
+<joint name="Joint_4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.000995 0.041137 -0.174409"/>
+  <parent link="joint_link_3_1"/>
+  <child link="joint_link_4_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Joint_5" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.000249 -0.020499 -0.053"/>
+  <parent link="joint_link_4_1"/>
+  <child link="joint_link_5_1"/>
+  <axis xyz="-0.012169 -0.999926 0.0"/>
+</joint>
+
+</robot>
